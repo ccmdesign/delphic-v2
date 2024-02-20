@@ -1,0 +1,188 @@
+/* DS Docs - The comments and the Notion docs are pretty much the same.
+   https://ccmdesign.notion.site/Colors-e337427d21e14da48e6dc921e0c8339a */
+
+/* ==================================================================================
+   THIS IS YOUR MAIN CONFIG FILE. 
+   HERE YOU CAN CHANGE THE BASELINE STYLING OF THE WHOLE SYSTEM
+  =================================================================================== */
+
+  
+/* Base Typography Configs */
+/* 
+  Here we configure the two font families we will use trhoughout the system. 
+  If you want to use just one, it's easier to assign the same font-family to both variables. 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300');
+@import url('https://cloud.typography.com/7264818/6341032/css/fonts.css');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,800;1,8..60,200;1,8..60,300;1,8..60,400;1,8..60,600;1,8..60,800&display=swap'); */
+
+:root, :after, :before {
+  /* Set the project fonts */
+  --display-font: "Sentinel SSm A", "Sentinel SSm B", serif;
+  --body-font: urw-din, sans-serif;
+
+  /* --icon-font: 'Material Symbols Outlined'; */
+  /* --icon-weight: 300; /* This variable is here in case we have multiple weights of the material symbols. */
+  /* --base-font-size: 16px; */
+}
+
+/* Theme Colors  */
+:root, :after, :before {
+  /* 
+    Set the project colors.
+    If you don't have secondary or tertiary colors, just repeat the previous one. 
+    Example: If Primary is a RED, and you won't use Secondary and Tertiary, 
+    just repeat the RED hsl values to the secondary and tertiary variables, 
+    so the system will generate the same values for the three colors. 
+  */
+
+  --base-h: 217;
+  --base-s: 81%;
+  --base-l: 17%;
+
+  --primary-h: 217;
+  --primary-s: 81%;
+  --primary-l: 17%;
+  
+  --accent-h: 54;
+  --accent-s: 100%;
+  --accent-l: 47%;
+
+  /* --secondary-h: 126; */
+  /* --secondary-s: 15%; */
+  /* --secondary-l: 72%; */
+  
+  /* --tertiary-h: 330; */
+  /* --tertiary-s: 28%; */
+  /* --tertiary-l: 65%; */
+
+  /* Feedback colors */
+  /* These colors are for feedback. Success, Fail, Warning, Attention.  */
+  /* --red-h: 347; */
+  /* --red-s: 58%; */
+  /* --red-l: 46%; */
+
+  /* --green-h: 174; */
+  /* --green-s: 62%; */
+  /* --green-l: 47%; */
+  
+  /* --yellow-h: 37; */
+  /* --yellow-s: 98%; */
+  /* --yellow-l: 53%; */
+
+  /* In most cases, you will not need to change these. */
+  /* --white-h: 0;   */
+  /* --white-s: 0%;   */
+  /* --white-l: 100%;   */
+  
+  /* --black-hsl: 0;   */
+  /* --black-hsl: 0%;   */
+  /* --black-hsl: 5%; */
+}
+
+
+:root, :after, :before {
+  /* 
+    This is the base styling of the system. Borders, spacings, rounded corners, etc. 
+    The variables are fairly descriptive. 
+  */
+
+  /* Base Borders */
+  /* --base-border-width: 2px; */
+  /* --base-border-style: solid; */
+  /* --base-border: var(--base-border-width) var(--base-border-style) hsla(var(--base-hsl), .1); */
+
+  /* Base Spacing */ 
+  /* --base-gap: var(--s1); */
+  
+  /* ToDo: I'm not sure this is a good thing. 
+     base-padding is not equal to base-padding-inline and block */
+  /* --base-padding: var(--s0);  */
+  /* --base-padding-inline: var(--s0); */
+  /* --base-padding-block: var(--s-1); */
+
+  /* Decorations */
+  /* --base-border-radius: 8px; */
+  
+  /* --box-shadow-offset-x: 0; */
+  /* --box-shadow-offset-y: 0; */
+  /* --box-shadow-blur-radius: 0; */
+  /* --box-shadow-spread-radius: 0; */
+  /* --box-shadow-color: transparent; */
+
+  /* --base-shadow: 0; */
+}
+
+/* Typography */
+:root, :after, :before {
+  /* 
+    This is a granular configuration of the typography elements.
+    We suggest using https://type-scale.com/ to calculate your sizings in more harmonic way.
+    Typescale will provide you many of these values, but here you can configre the appearance
+    for each heading level. 
+  */
+
+  /* --base-text-color: var(--base-color); */
+  /* --base-line-height: var(--ratio); */
+  /* --base-font-weight: 300; */
+  /* --base-letter-spacing: 30; */
+
+  /* Sets the base typography configs for buttons */
+  /* --button-font-family: var(--base-font); */
+  /* --button-font-weight: var(--base-font-weight); */
+  /* --button-letter-spacing: var(--base-letter-spacing); */
+
+  /* Headings Config */
+  /* H1 */
+  /* --h1-font-family: var(--display-font); */
+  /* --h1-font-size: 3rem; */
+  /* --h1-text-color: var(--primary-color); */
+  /* --h1-line-height: 1.2; */
+  /* --h1-font-weight:  800; */
+
+  /* H2 */
+  /* --h2-font-family: var(--display-font); */
+  /* --h2-font-size: 2.5rem; */
+  /* --h2-text-color: var(--primary-color); */
+  /* --h2-line-height: 1.2; */
+  /* --h2-font-weight: 400; */
+
+  /* H3 */
+  /* --h3-font-family: var(--display-font); */
+  /* --h3-font-size: 1.6rem; */
+  /* --h3-text-color: var(--primary-color); */
+  /* --h3-line-height: 1.2; */
+  /* --h3-font-weight: 600; */
+
+  /* H4 */
+  /* --h4-font-family: var(--display-font); */
+  /* --h4-font-size: 1.2rem; */
+  /* --h4-text-color: var(--primary-color); */
+  /* --h4-line-height: 1.5; */
+  /* --h4-font-weight: 400; */
+
+  /* H5 */
+  /* --h5-font-family: var(--display-font); */
+  /* --h5-font-size:   1rem; */
+  /* --h5-text-color: var(--primary-color); */
+  /* --h5-line-height: var(--ratio); */
+  /* --h5-font-weight: 800; */
+
+  /* H6 */
+  /* --h6-font-family: var(--display-font); */
+  /* --h6-font-size:   1rem; */
+  /* --h6-text-color: var(--primary-color); */
+  /* --h6-line-height: var(--ratio); */
+  /* --h6-font-weight: 400; */
+}
+
+/* Wrappers */
+:root, :after, :before {
+  /* --measure: 80ch; */
+  /* --narrow: 700px; */
+  /* --regular: 992px; */
+  /* --wide: 1280px; */
+  /* --wrapper: 1280px; */
+  /* --scroll-height: 0; /* Accepts a string in VH ex: "70vh" */
+}

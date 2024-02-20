@@ -1,0 +1,21 @@
+{
+  "name": "boilerplate-ds",
+  "version": "1.0.0",
+  "description": "Boilerplate for project using CCM Design System",
+  "scripts": {
+    "dev": "nuxt dev",
+    "generate": "nuxt generate"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nuxt": "^3.0.0-rc.11",
+    "nuxt-gtag": "^0.5.7"
+  },
+  "dependencies": {
+    "@ccmdesign/ccm-ds": "^0.5.0",
+    "@nuxt/content": "^2.9.0",
+    "markdown-renderer": "^1.0.1",
+    "path": "^0.12.7",
+    "sass": "^1.54.4"
+  }
+}
