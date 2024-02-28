@@ -44,6 +44,9 @@ const { menu: menuData } = useMenu()
       display: flex;
       align-items: center;
       margin-block: 0;
+      border-right: 1px solid #37313c;
+      margin-right: var(--s1);
+      height: 100%;
 
       li {
         margin-right: var(--s2);
