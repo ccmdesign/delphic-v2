@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section id="contact" class="contact">
     <center-l measure="1208px">
       <h3>Contact</h3>
       <p>Need a service? Choose one of<br /> the channels on the page, and<br /> we'll get back to you soon!</p>

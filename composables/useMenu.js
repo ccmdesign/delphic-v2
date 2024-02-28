@@ -2,15 +2,15 @@ export default function () {
   const menuData = ref([
     {
       label: 'Projects',
-      url: '/projects'
+      url: '#projects'
     },
     {
       label: 'About us',
-      url: '/about-us'
+      url: '#about-us'
     },
     {
       label: 'Contact',
-      url: '/contact'
+      url: '#contact'
     },
   ])
 

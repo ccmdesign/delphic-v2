@@ -1,6 +1,6 @@
 <template>
   <base-section class="delphic-section">
-    <center-l measure="1208px">
+    <center-l id="projects" measure="1208px">
       <h2>Projects</h2>
       <p>
         With solutions ripe for being replicated <br />
