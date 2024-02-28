@@ -1,19 +1,6 @@
 <template>
-  <div class="page-wrapper">
-    <header>
-      <ccm-nav />
-    </header>
-    <main>
-      <slot />
-    </main>
-    <footer>
-      <h2>Footer</h2>
-      <div class="by-ccm">
-        <span>{{ currentYear }} ® Copyright {{ projectConfig.client }}<span class="desktop-only"> | Licensed under <a :href="projectConfig.license_url">{{ projectConfig.license_name }}</a></span></span>
-        <a href="https://www.ccmdesign.ca" target="_blank">by ccm.design</a>
-      </div>
-    </footer>
-  </div>
+  <slot />
+  <delphic-footer />
 </template>
 
 <script setup>
@@ -36,11 +23,13 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
 
-  header { }
+  header {}
 
-  footer { }
+  footer {}
 
-  main { flex: 1; }
+  main {
+    flex: 1;
+  }
 }
 
 footer {
@@ -60,6 +49,7 @@ footer {
   letter-spacing: .3px;
 }
 
-.by-ccm a { color: hsla(var(--base-hsl), 0.5); }
-
+.by-ccm a {
+  color: hsla(var(--base-hsl), 0.5);
+}
 </style>

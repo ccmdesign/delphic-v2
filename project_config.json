@@ -1,14 +1,11 @@
 {
-  "title": "Project Title",
+  "title": "Delphic",
   "description": "Project Description can be a longer text, ideally the length of a tweet.",
   "url": "https://example.com",
   "image": "https://example.com/images/open-graph-image.jpg",
-
   "gtm": "GTM-N6ZCLNH",
   "gtag": "G-XXXXXXXXXX",
-  
   "client": "CCM Design Inc.",
   "license_name": "MIT",
   "license_url": "https://opensource.org/licenses/MIT"
 }
-
