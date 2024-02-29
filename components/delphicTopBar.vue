@@ -8,9 +8,12 @@
       <nav>
         <ul>
           <li v-for="menu in menuData">
-            <NuxtLink :to="menu.url">
+            <!-- <NuxtLink :to="menu.url">
               {{ menu.label }}
-            </NuxtLink>
+            </NuxtLink> -->
+            <a :href="menu.url">
+              {{ menu.label }}
+            </a>
           </li>
         </ul>
         <base-button color="secondary"

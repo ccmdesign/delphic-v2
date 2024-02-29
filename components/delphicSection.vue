@@ -1,6 +1,6 @@
 <template>
   <base-section class="delphic-section">
-    <center-l measure="1208px">
+    <center-l id="projects" measure="1208px">
       <h2>Projects</h2>
       <p>
         With our partners, we build solutions for a <br /> more sustainable and resilient future in one of<br /> the New
