@@ -191,7 +191,7 @@
 
 /* Wrappers */
 :root, :after, :before {
-  /* --measure: 80ch; */
+  --measure: 80ch;
   /* --narrow: 700px; */
   /* --regular: 992px; */
   /* --wide: 1280px; */

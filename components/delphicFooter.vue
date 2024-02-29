@@ -50,6 +50,10 @@ const { menu: menuData, socialLinks } = useMenu()
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 481px) {
+      flex-direction: column;
+    }
+
     &:first-of-type {
       padding-bottom: 2.6875rem;
       border-bottom: 1px solid hsl(199, 98%, 64%);

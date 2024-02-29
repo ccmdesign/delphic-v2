@@ -1,1 +1,4 @@
 /* In this file you will add your project wide styles. */
+body, html, #__nuxt {
+  width: 100vw;
+}

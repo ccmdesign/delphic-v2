@@ -3,10 +3,8 @@
     <center-l measure="1208px">
       <h2>Projects</h2>
       <p>
-        With solutions ripe for being replicated <br />
-        globally, Puerto Rico is reclaiming its <br />
-        title as the “rich port” it has always <br />
-        been – an international trading post.
+        With our partners, we build solutions for a <br /> more sustainable and resilient future in one of<br /> the New
+        World's most strategic international<br /> trade centers: Puerto Rico.
       </p>
     </center-l>
     <delphic-card>
@@ -120,11 +118,16 @@ const boxes = ref([
   background-position: right top;
 
   h2 {
-    font-size: 8.375rem;
+    font-size: 8.25rem;
     line-height: 10.125rem;
     color: hsl(var(--secondary-hsl));
     font-weight: 200;
     margin-bottom: 1.75rem;
+
+    @media screen and (max-width: 481px) {
+      font-size: 6.25rem;
+      line-height: 7rem;
+    }
   }
 
   p {
@@ -132,6 +135,12 @@ const boxes = ref([
     line-height: 2.6875rem;
     font-weight: 300;
     color: hsl(var(--primmary-hsl));
+
+    @media screen and (max-width: 481px) {
+      font-size: 1.25rem;
+      line-height: 1.15rem;
+      font-weight: 400;
+    }
   }
 }
 </style>

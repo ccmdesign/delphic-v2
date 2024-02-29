@@ -12,13 +12,17 @@
   gap: 1.875rem;
   margin-top: 2.9375rem;
 
+  @media screen and (max-width: 481px) {
+    grid-template-columns: 1fr;
+  }
+
   .inner-card {
     position: relative;
     background: #f6f6ec;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 25.9375rem;
+    min-height: 25.9375rem;
     padding: 1.875rem 6.5rem 1.625rem 7.125rem;
 
     .inner-card-text {

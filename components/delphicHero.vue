@@ -29,21 +29,38 @@
   .center-hero {
     display: flex;
     flex-direction: row-reverse;
+    padding-right: 60px;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: 481px) {
+      padding-bottom: 0;
+      padding-right: 0;
+    }
   }
 
 
   h1 {
+    font-family: var(--inter);
     color: transparent;
     background-clip: text;
     background: radial-gradient(69.09% 381.13% at 1.86% 0%, rgba(255, 255, 255, 0.3) 2.49%, #FFFFFF 67.52%, #FFFFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font-size: 100px;
-    line-height: 86%;
+    font-size: 5.3244rem;
+    line-height: 4.5788rem;
     letter-spacing: -1.5%;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: -28.8px;
+
+    @media screen and (max-width: 481px) {
+      font-size: 3.75rem;
+      line-height: 3.25rem;
+
+      span {
+        margin: 0 !important;
+      }
+    }
 
     span {
       display: block;

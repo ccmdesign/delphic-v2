@@ -39,6 +39,11 @@ const { menu: menuData } = useMenu()
     display: flex;
     align-items: center;
 
+    @media screen and (max-width: 481px) {
+      display: none;
+
+    }
+
     ul {
       list-style: none;
       display: flex;

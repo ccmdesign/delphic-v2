@@ -30,6 +30,11 @@
       letter-spacing: 0em;
       text-align: left;
       margin-bottom: 1.875rem;
+
+      @media screen and (max-width: 481px) {
+        font-size: 6.25rem;
+        line-height: 5.85rem;
+      }
     }
 
     p {
@@ -40,6 +45,11 @@
       letter-spacing: 0.12em;
       text-align: left;
 
+      @media screen and (max-width: 481px) {
+        font-size: 1.5rem;
+        line-height: 1.30rem;
+        font-weight: 400;
+      }
     }
   }
 }

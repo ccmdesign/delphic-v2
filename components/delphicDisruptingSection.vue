@@ -23,23 +23,26 @@
 <style lang="scss" scoped>
 .disrupting-section {
   width: 100%;
-  height: 655px;
+  min-height: 655px;
   background-image: url("/images/disrupting-bg.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
 
   .center {
     width: 100%;
+
+    @media screen and (max-width: 481px) {
+      width: 90%;
+    }
   }
 
   h4 {
     color: hsl(var(--gray-hsl));
     font-weight: 350;
-    font-size: 38px;
-    line-height: 32px;
-    margin-bottom: 12px;
+    font-size: 2.375rem;
+    line-height: 2rem;
+    margin-bottom: 0.75rem;
 
     strong {
       font-weight: 700;
@@ -47,20 +50,29 @@
   }
 
   h2 {
-    font-size: 106px;
+    font-size: 6.625rem;
     font-weight: 100;
-    line-height: 91px;
+    line-height: 5.6875rem;
     color: hsl(var(--gray-hsl));
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
+
+    @media screen and (max-width: 481px) {
+      font-size: 5rem;
+      line-height: 4rem;
+    }
   }
 
   .infos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex: 1;
+
+    @media screen and (max-width: 821px) {
+      flex-direction: column;
+    }
 
     div {
-
       span {
         font-family: var(--tt-comons);
         font-size: 68px;
@@ -70,6 +82,11 @@
         text-align: left;
         color: hsl(var(--secondary-hsl));
 
+        @media screen and (max-width: 821px) {
+          display: block;
+          text-align: center;
+        }
+
         &:first-child {
           font-size: 23px;
           font-weight: 350;
@@ -78,6 +95,12 @@
           text-align: left;
           color: hsl(var(--light-hsl));
           text-transform: uppercase;
+
+          @media screen and (max-width: 821px) {
+            display: block;
+            text-align: center;
+            margin: 0 !important;
+          }
         }
       }
 
