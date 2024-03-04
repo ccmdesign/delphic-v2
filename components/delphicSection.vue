@@ -1,6 +1,7 @@
 <template>
   <base-section class="delphic-section">
-    <center-l id="projects" measure="1208px">
+    <center-l id="projects"
+      measure="1208px">
       <h2>Projects</h2>
       <p>
         With our partners, we build solutions for a <br /> more sustainable and resilient future in one of<br /> the New
@@ -26,6 +27,7 @@
     </delphic-card>
   </base-section>
 </template>
+
 <script setup>
 const boxes = ref([
   {
@@ -88,59 +90,41 @@ const boxes = ref([
     marginBottom: '26px',
     bullets: 3
   },
-  {
-    img: {
-      src: 'ladderstone.png',
-      alt: "LadderStone logo"
-    },
-    text: "LadderStone offers expert advisory services within the highly regulated sectors of Financial Services, Cybersecurity, and Data Privacy. It helps stakeholders scale their businesses and succeed in competitive marketplaces, especially as global trade and intercontinental transactions become increasingly important and regulated.",
-    textDecoration: 'FINTECH',
-    marginBottom: '23px',
-    bullets: 2
-  },
-  {
-    img: {
-      src: 'delos.png',
-      alt: "LadderStone logo"
-    },
-    text: "Lorem ipsum Lorem ipsum indolor aioadsloa olql oras Lorem ipsum Lorem ipsum indolor aioadsloa olql orasLorem ipsum Lorem ipsum indolor aioadsloa olql orasLorem ipsum Lorem ipsum indolor aioadsloa olql oras",
-    textDecoration: 'INFRASTRUCTURE',
-    marginBottom: '36px',
-    bullets: 2
-  },
 ])
 </script>
-<style lang="scss" scoped>
-.delphic-section {
-  background-image: url("/images/bg-pattern.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: right top;
 
-  h2 {
-    font-size: 8.25rem;
-    line-height: 10.125rem;
-    color: hsl(var(--secondary-hsl));
-    font-weight: 200;
-    margin-bottom: 1.75rem;
+<style lang="scss"
+  scoped>
+  .delphic-section {
+    background-image: url("/images/bg-pattern.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right top;
 
-    @media screen and (max-width: 481px) {
-      font-size: 6.25rem;
-      line-height: 7rem;
+    h2 {
+      font-size: 8.25rem;
+      line-height: 10.125rem;
+      color: hsl(var(--secondary-hsl));
+      font-weight: 200;
+      margin-bottom: 1.75rem;
+
+      @media screen and (max-width: 481px) {
+        font-size: 6.25rem;
+        line-height: 7rem;
+      }
+    }
+
+    p {
+      font-size: 1.875rem;
+      line-height: 2.6875rem;
+      font-weight: 300;
+      color: hsl(var(--primmary-hsl));
+
+      @media screen and (max-width: 481px) {
+        font-size: 1.25rem;
+        line-height: 1.15rem;
+        font-weight: 400;
+      }
     }
   }
-
-  p {
-    font-size: 1.875rem;
-    line-height: 2.6875rem;
-    font-weight: 300;
-    color: hsl(var(--primmary-hsl));
-
-    @media screen and (max-width: 481px) {
-      font-size: 1.25rem;
-      line-height: 1.15rem;
-      font-weight: 400;
-    }
-  }
-}
 </style>
