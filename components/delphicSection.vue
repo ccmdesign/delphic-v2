@@ -36,7 +36,7 @@ const boxes = ref([
       alt: 'Aguadila logo'
     },
     text: 'The Aguadilla Research Center is a commercial property situated in an Opportunity Zone of the US Territory of Puerto Rico. The property spans 328,381 square feet and is suitable for various uses such as government contractors, financial institutions, banks, retail stores, or food outlets.',
-    textDecoration: 'INFRASTRUCTURE',
+    textDecoration: 'REAL ESTATE',
     marginBottom: '26px',
     bullets: 3
   },
@@ -45,8 +45,8 @@ const boxes = ref([
       src: '4thought.png',
       alt: '4thought Technologies logo'
     },
-    text: 'With a mission to support and empower the next generation of professional investors, 4Thought Technologies strives to help investors navigate the fast-paced and automated financial markets by providing tools to develop market insights, execute trades faster, and effectively manage risks.',
-    textDecoration: 'TECHNOLOGIES',
+    text: 'With a mission to support and empower the next generation of professional investors, 4Thought Technologies strives to help investors navigate the fast-paced and automated financial markets by providing tools to develop market insights, execute trades faster, and effectively manage risks. Backed by the U.S. National Science Foundation, 4Thought is a SaaS company founded by alums of Bloomberg, EY, JP Morgan, MIT, and Stripe that provides next-generation AI & data analytics infrastructure for institutional investors.',
+    textDecoration: 'FINTECH',
     marginBottom: '34px',
     bullets: 3
   },
@@ -56,7 +56,7 @@ const boxes = ref([
       alt: 'Silverton Mountain logo'
     },
     text: "North America's highest and steepest ski area, with no easy way down. Preserved in its natural state, a single lift carries you to 12,300 feet, offering direct access to untouched terrain and the challenge of 3,000-foot runs in a stunning cirque setting.",
-    textDecoration: 'HOSPITALITY',
+    textDecoration: 'REAL ESTATE',
     marginBottom: '10px',
     bullets: 2
   },

@@ -5,10 +5,6 @@ export default function () {
       url: '#projects'
     },
     {
-      label: 'About us',
-      url: '#about-us'
-    },
-    {
       label: 'Contact',
       url: '#contact'
     },
