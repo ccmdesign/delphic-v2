@@ -1,0 +1,5 @@
+[build.environment]
+  SITE_NAME = "delphic"
+
+[[plugins]]
+  package = "./netlify-clickup-plugin"
